@@ -18,7 +18,7 @@ const client = redis.createClient({
 });
 client
   .connect()
-  .then("Connected to redis server.")
+  .then(console.log("Connected to redis server."))
   .catch((err) => console.log(err));
 client.on("error", (err) => console.log(err));
 
